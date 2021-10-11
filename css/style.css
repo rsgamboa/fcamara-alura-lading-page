@@ -369,26 +369,34 @@ section
     max-width: 1164px;
     padding-top: 25px;
 }
-@media screen and (max-width: 767px) {
-    #difference {
+@media screen and (max-width: 767px)
+{
+    #difference
+    {
         padding: 20px 0 60px;
     }
-    #difference .inner div + div {
+    #difference .inner div + div
+    {
         margin-left: 16px;
     }
-    #difference .inner p {
+    #difference .inner p
+    {
         font-size: 16px;
     }
-    #difference .inner h3 {
+    #difference .inner h3
+    {
         margin: 4px auto 16px;
         font-size: 18px;
     }
 }
-@media screen and (max-width: 480px) {
-    #difference .inner {
+@media screen and (max-width: 480px)
+{
+    #difference .inner
+    {
         display: block;
     }
-    #difference .inner div + div {
+    #difference .inner div + div
+    {
         margin: 16px auto 0;
     }
 }
@@ -600,29 +608,35 @@ section
     padding: 80px 0 92px;
     background: url(../img/img-cnt-03.png) center / cover no-repeat;
 }
-#lead .contentArea {
+#lead .contentArea
+{
     width: 100%;
     max-width: 1300px;
 }
-#lead h2 {
+#lead h2
+{
     margin-bottom: 24px;
     color: #111;
     font-size: 24px;
     font-weight: bold;
     line-height: 1.67;
 }
-#lead p {
+#lead p
+{
     margin-bottom: 48px;
     color: #111;
     font-size: 18px;
     line-height: 2.14;
     letter-spacing: .5px;
 }
-#lead .btn {
+#lead .btn
+{
     margin: 0 auto 0 0;
 }
-@media screen and (min-width: 768px) {
-    #lead .inner {
+@media screen and (min-width: 768px)
+{
+    #lead .inner
+    {
         max-width: 614px;
         margin: 0 auto 0 0;
         padding: 64px 40px;
@@ -630,23 +644,28 @@ section
         box-shadow: 0 3px 6px 0 rgba(0,0,0,.1);
     }
 }
-@media screen and (max-width: 767px) {
-    #lead {
+@media screen and (max-width: 767px)
+{
+    #lead
+    {
         padding: 0 0 40px;
         background: transparent;
     }
-    #lead:before {
+    #lead:before
+    {
         content: '';
         display: block;
         margin-bottom: 24px;
         padding-top: 40%;
         background: url(../img/lead001.jpg) center / cover no-repeat;
     }
-    #lead h2 {
+    #lead h2
+    {
         margin-bottom: 16px;
         font-size: 18px;
     }
-    #lead p {
+    #lead p
+    {
         margin-bottom: 32px;
     }
 }
