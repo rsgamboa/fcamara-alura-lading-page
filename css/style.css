@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+:root
+{
+    --blue: #287bff;
+    --blue2: #4B4FA1;
+    --white: #fff;
+    --grey: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+    --orange: #ef653c;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+}
+.nv-menu
+{
+   width: 100%;
+   top: 0;
+   right: 0;
+   min-height: 9px;
+   background: var(--orange); 
+}
+.nv-menu ul
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.nv-menu ul li
+{
+    padding: 0 0 0 20px;
+    display: inline-block; 
+    flex-grow: 4;   
+    list-style: none;
+    line-height: 60%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.nv-menu ul li:hover
+{
+    background: var(--white);
+   
+}
+.nv-menu ul li:nth-child(1)
+{
+    margin: 10px 0 0 45px;
+    pointer-events: none;
+}
+.nv-menu ul li a
+{
+    width: 100%;
+    text-decoration: none;
+    color: var(--white);
+}
+.nv-menu ul li:hover a
+{
+    color: var(--blue);
+}
+.nv-menu ul li a .icon
+{
+    min-width: 60px;
+    height: 60px;
+    line-height: 45px;
+    text-align: start;
+}
+.nv-menu ul li a .icon ion-icon
+{
+    font-size: 1.75em;
+}
+ion-icon {
+    pointer-events: none;
+}
+.nv-menu ul li a .tt
+{
+    display: inline;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+/* curve outside */
+
+.nv-menu ul li:hover a::before
+{
+    content: '';
+    position: absolute;
+    margin: -40px;
+    top: 90px;
+    height: 20px;
+    width: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 6px 6px 0 -2px var(--white);
+    pointer-events: none
+    
+}
+
+.nv-menu ul li:hover a::after
+{
+    content: '';
+    position: absolute;
+    margin: -40px 0;
+    top: 90px;
+    height: 20px;
+    width: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -6px 6px 0 -2px var(--white);
+    pointer-events: none;
+    
+}
+
+/* end curve outside */
+
+.mrsfcmr
+{
+    width: 100%;
+    height: 526px;
+    background: url(https://dekiru.net/static/v2018/img/bk-stripe-pattern.png);
+}
+.cnt-l
+{
+    margin: 0;
+    width: 60%;
+    height: 526px;
+    display: inline-block;
+}
+.cnt-l-tt
+{
+    margin: 0;
+    font-size: 5.0em;
+    top: 100px;
+    left: 53px;
+    color: var(--orange);
+    display: flow-root;
+    position: absolute;
+    
+}
+.tt-clr
+{
+    font-size: 1.2em;
+    color: var(--black1);
+  
+}
+.cnt-l-stt
+{
+    margin: 0;
+    padding-top: 65px;
+    padding-left: 15px;
+    font-size: 1.8em;
+    top: 260px;
+    left: 53px;
+    color: var(--black1);
+    display: inline-block;
+    position: absolute;
+    word-break: break-all;
+    width: 565px;
+}
+.btn-sc
+{
+    margin: 0;
+    position: absolute;
+    font-size: 1.4em;
+    top: 430px;
+    left: 70px;
+    color: var(--white);
+    background: var(--blue);
+    border: 1px solid var(--black1);
+    width: 250px;
+    height: 50px;
+}
+.btn-sc:hover
+{
+    margin: 0;
+    position: absolute;
+    font-size: 1.4em;
+    top: 430px;
+    left: 70px;
+    color: var(--blue);
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+    width: 250px;
+    height: 50px;
+}
+.cnt-l-scl
+{
+    margin: 0;
+    position: absolute;
+    top: 530px;
+    left: 70px;
+}
+
+.cnt-l-scl ul
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.cnt-l-scl ul li
+{
+    display: inline-block;
+    padding: 0 0 0 16px; 
+    flex-grow: 1;   
+    list-style: none;
+    line-height: 70%;    
+}
+.cnt-l-scl ul li a
+{
+    width: 100%;
+    text-decoration: none;
+    color: var(--blue);
+}
+.cnt-l-scl ul li:hover a
+{
+    color: var(--black1);
+}
+.cnt-l-scl ul li a .icon
+{
+    min-width: 60px;
+    height: 60px;
+    line-height: 45px;
+    text-align: start;
+}
+.cnt-l-scl ul li a .icon ion-icon
+{
+    font-size: 1.80em;
+}
+.cnt-r
+{
+    margin: 0;
+    position: absolute;
+    width: 40%;
+    height: 526px;
+    display: inline-block;
+}
+.img-dstq
+{
+    margin: 0;
+    width: 92%;
+    position: relative;
+    top: 36px;
+    left: -73px;
+}
+
+/* Content Area A */
+
+section
+{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 100px;
+}
+#performance
+{
+    padding: 300px 0 35px;
+    background: url(https://www.sejuku.net/courses/design/img/performance.jpg) center top / contain no-repeat;
+}
+.contentArea
+{
+    width: 1000px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    z-index: 1;
+}
+.ttlArea
+{
+    margin-bottom: 48px;
+    text-align: center;
+}
+.ttlArea h2
+{
+    color: #111;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+.ttlArea h2 span
+{
+    display: block;
+    margin-bottom: 8px;
+    color: #eb0000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.en
+{
+    font-family: 'Ubuntu' ,sans-serif;
+}
+.ttlArea p
+{
+    margin-top: 16px;
+    color: #3b4043;
+    font-size: 20px;
+    line-height: 1.57;
+    letter-spacing: .5px;
+}
+#difference .inner {
+    display: flex;
+}
+#difference .inner p
+{
+    color: var(--blue2);
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+#difference .inner h3
+{
+    margin: 8px auto 40px;
+    color: #111;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+}
+#difference img
+{
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 10%);
+}
+#difference .inner div
+{
+    flex: 1;
+}
+#difference .inner div + div
+{
+    margin-left: 42px;
+}
+#difference .inner div + div p
+{
+    color: var(--orange);
+}
+#difference img
+{
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 10%);
+}
+#difference .contentArea
+{
+    width: 100%;
+    max-width: 1164px;
+    padding-top: 25px;
+}
+@media screen and (max-width: 767px) {
+    #difference {
+        padding: 20px 0 60px;
+    }
+    #difference .inner div + div {
+        margin-left: 16px;
+    }
+    #difference .inner p {
+        font-size: 16px;
+    }
+    #difference .inner h3 {
+        margin: 4px auto 16px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #difference .inner {
+        display: block;
+    }
+    #difference .inner div + div {
+        margin: 16px auto 0;
+    }
+}
+/* End Content Area A */
+
+/* Content Area B */
+
+#performance
+{
+    padding: 300px 0 35px;
+    background: url(../img/img-cnt-02.png) center top / contain no-repeat;
+}
+#performance ul
+{
+    font-size: 0;
+    text-align: center;
+}
+#performance li
+{
+    display: inline-block;
+}
+#performance li + li
+{
+    margin-left: 40px;
+}
+#performance li h3
+{
+    margin-bottom: 10px;
+    color: #111;
+    font-size: 18px;
+    font-weight: 500;
+}
+#performance li p
+{
+    color: #111;
+    font-size: 18px;
+    font-weight: 500;
+}
+#performance li p span
+{
+    color: var(--orange);
+    font-family: HelveticaNeue, 'NotoSans JP', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+}
+@media screen and (min-width: 768px)
+{
+    #performance .inner
+    {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 60px 30px 80px;
+        background: #fff;
+        box-shadow: 0 3px 24px 0 rgba(0,0,0,.16);
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    #performance
+    {
+        padding-top: 24%;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    #performance
+    {
+        padding: 0 0 40px;
+        background: transparent;
+    }
+    #performance:before
+    {
+        content: '';
+        display: block;
+        margin-bottom: 24px;
+        padding-top: 31%;
+        background: url(../img/performance.jpg) center / cover no-repeat;
+    }
+    #performance ul
+    {
+        text-align: left;
+    }
+    #performance li
+    {
+        display: block;
+    }
+    #performance li + li
+    {
+        margin: 24px auto 0;
+    }
+    #performance li h3
+    {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    #performance li p
+    {
+        font-size: 16px;
+    }
+    #performance li p span
+    {
+        font-size: 36px;
+    }
+}
+
+/* End Area B */
+
+/* Area C */
+
+#reason
+{
+    padding: 60px 0;
+}
+#reason .contentArea
+{
+    width: 100%;
+    max-width: 1164px;
+}
+#reason .inner
+{
+    display: flex;
+}
+#reason .inner > div
+{
+    flex: 1;
+    padding: 51px 30px 63px;
+    text-align: center;
+    border: solid 2px var(--black1);
+    background: var(--blue);
+    color: var(--white);
+}
+#reason .inner > div + div
+{
+    margin-left: 24px;
+    background: var(--orange);
+    border-color: var(--black1);
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
+    color: #fff;
+}
+#reason .inner .subTtl
+{
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 500;
+}
+#reason .inner h3
+{
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.63;
+}
+#reason .inner ul
+{
+    display: inline-block;
+}
+#reason .inner li
+{
+    position: relative;
+    padding-left: 22px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.86;
+    text-align: left;
+}
+#reason .inner li + li
+{
+    margin-top: 16px;
+}
+@media screen and (max-width: 767px)
+{
+    #reason
+    {
+        padding: 40px 0;
+    }
+    #reason .inner
+    {
+        display: block;
+    }
+    #reason .inner > div
+    {
+        padding: 24px 16px 32px;
+        text-align: left;
+    }
+    #reason .inner > div + div
+    {
+        margin: 16px auto 0;
+    }
+    #reason .inner h3
+    {
+        margin-bottom: 18px;
+    }
+    #reason .inner ul
+    {
+        display: block;
+    }
+    #reason .inner li + li
+    {
+        margin-top: 10px;
+    }
+}
+
+
+/* End Area C */
+
+/* Area D */
+
+#lead {
+    padding: 80px 0 92px;
+    background: url(../img/img-cnt-03.png) center / cover no-repeat;
+}
+#lead .contentArea {
+    width: 100%;
+    max-width: 1300px;
+}
+#lead h2 {
+    margin-bottom: 24px;
+    color: #111;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.67;
+}
+#lead p {
+    margin-bottom: 48px;
+    color: #111;
+    font-size: 18px;
+    line-height: 2.14;
+    letter-spacing: .5px;
+}
+#lead .btn {
+    margin: 0 auto 0 0;
+}
+@media screen and (min-width: 768px) {
+    #lead .inner {
+        max-width: 614px;
+        margin: 0 auto 0 0;
+        padding: 64px 40px;
+        background: #fdfdfd;
+        box-shadow: 0 3px 6px 0 rgba(0,0,0,.1);
+    }
+}
+@media screen and (max-width: 767px) {
+    #lead {
+        padding: 0 0 40px;
+        background: transparent;
+    }
+    #lead:before {
+        content: '';
+        display: block;
+        margin-bottom: 24px;
+        padding-top: 40%;
+        background: url(../img/lead001.jpg) center / cover no-repeat;
+    }
+    #lead h2 {
+        margin-bottom: 16px;
+        font-size: 18px;
+    }
+    #lead p {
+        margin-bottom: 32px;
+    }
+}
+.btn
+{
+    display: block;
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+    padding: 18px 0;
+    background: #f1b007;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.88;
+    text-align: center;
+}
+
+
+/* End Area D */
+
+footer
+{
+    padding: 4rem 1rem;
+    text-align: center;
+    background: var(--black1);
+}
+footer small
+{
+    color: var(--white);
+    font-size: 1.45rem;
+    font-weight: 500;
+    letter-spacing: .07em;
+    line-height: 1.5;
+}
+footer ul li
+{
+    display: inline-block; 
+    font-size: 1.3em;
+    padding: 20px 0 0 20px;
+}
+footer ul li a
+{
+    color: var(--white);
+}
